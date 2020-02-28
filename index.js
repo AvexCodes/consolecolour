@@ -1,18 +1,25 @@
-// test file
-import * as cc from './console.js'
+const cc = require('@avexcodes/consolecolour')
 
-var con = new cc.ConsoleColour()
+let con = new cc()
 
+// Black, Red, Green, Yellow, Blue, Magenta, Cyan, White Bright Red
+con.yellow("Banana!")
+// or use the bright red colour
+con.brightRed("Apple!")
 
-// con.black("Black").red("Red").green("I am green").yellow("Banana!").blue("I'm blue dab dee dab die").magenta("A legendary colour tbh.").cyan("The colour of the ocean?").white("defualt boy.").brightRed("Fluro colours all day!").log
+// Black, Red, Green, Yellow, Blue, Magenta, Cyan, White
+con.backMagenta("Magenta Background!").log
 
-// con.backRed().blue("I have a red background with blue text!").log
+/*
+	 Style your text!
+	 => Bright, Dim, Underscore, Blink, Reverse, Hidden
+*/
+con.underscore("This is total important!")
+con.reverse("woah reverse...").log
 
-// con.backGreen("I am green.").log
-// con.backCyan("Oh Hey Console!").log
-// con.bright("Bright").dim("dimmed text").underscore("underscores!!").blink("My blinkers").reverse("Just as confused buddy...").hidden("you cant see me!").log
-//con.ba("red", "Red text black background").log
-//con.backBlack("Control Test").
+// rgb to ansi
+con.rgbText([255,0,255], "PURPLE!").log
+con.rgbBack([255,0,255], "Purple BG!").log
 
-// con.rgbText([255, 0, 0], "Jordan is").rgbText([123,123,5], "g").rgbText([5,79,123], "a").rgbText([34,230,120], "y").log
-con.backGreen().rgbText([255, 0, 255], "Hey Look, is that RGB to Ansi256?").log
+// Chainable Methods!
+con.backYellow("Yellow background with").red("some red text!").reset().blink("Blinking...").log
