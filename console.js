@@ -95,7 +95,7 @@ class ConsoleColour {
     }
 
     bright(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${Bright}${text || ""}${Reset}`;
             return this;
         }
@@ -104,7 +104,7 @@ class ConsoleColour {
     }
 
     dim(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${Dim}${text || ""}${Reset}`;
             return this;
         }
@@ -113,7 +113,7 @@ class ConsoleColour {
     }
 
     reverse(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${Reverse}${text || ""}${Reset}`;
             return this;
         }
@@ -122,7 +122,7 @@ class ConsoleColour {
     }
 
     blink(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${Blink}${text || ""}${Reset}`;
             return this;
         }
@@ -131,7 +131,7 @@ class ConsoleColour {
     }
 
     hidden(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${Hidden}${text || ""}${Reset}`;
             return this;
         }
@@ -140,7 +140,7 @@ class ConsoleColour {
     }
 
     underline(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${Underscore}${text || ""}${Reset}`;
             return this;
         }
@@ -149,7 +149,7 @@ class ConsoleColour {
     }
 
     black(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${FgBlack}${text || ""}${Reset}`;
             return this;
         }
@@ -158,7 +158,7 @@ class ConsoleColour {
     }
 
     red(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${FgRed}${text || ""}${Reset}`;
             return this;
         }
@@ -167,7 +167,7 @@ class ConsoleColour {
     }
 
     green(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${FgGreen}${text || ""}${Reset}`;
             return this;
         }
@@ -176,7 +176,7 @@ class ConsoleColour {
     }
 
     yellow(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${FgYellow}${text || ""}${Reset}`;
             return this;
         }
@@ -184,7 +184,7 @@ class ConsoleColour {
         return this;
     }
     blue(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${FgBlue}${text || ""}${Reset}`;
             return this;
         }
@@ -192,7 +192,7 @@ class ConsoleColour {
         return this;
     }
     magenta(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${FgMagenta}${text || ""}${Reset}`;
             return this;
         }
@@ -200,7 +200,7 @@ class ConsoleColour {
         return this;
     }
     cyan(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${FgCyan}${text || ""}${Reset}`;
             return this;
         }
@@ -208,7 +208,7 @@ class ConsoleColour {
         return this;
     }
     white(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${FgWhite}${text || ""}${Reset}`;
             return this;
         }
@@ -217,7 +217,7 @@ class ConsoleColour {
     }
     
     brightRed(text, space) {
-        if (space == false) {
+        if (space === false) {
             this._log += `${brightRedCol}${text || ""}${Reset}`;
             return this;
         }
@@ -295,7 +295,7 @@ class ConsoleColour {
         let col;
         if (args < 3) {
             col = FgBlack;
-            if (space == false) {
+            if (space === false) {
                 this._log += `${FgYellow}${text || ""}${Reset}`;
                 return this;
             }
@@ -303,12 +303,12 @@ class ConsoleColour {
             return this;
         }
 
-        if (space == false) {
+        if (space === false) {
             this._log += `${col}${text || ""}`;
             return this;
         }
 
-        col = rgbtoansi256(args) 
+        col = rgbtoansi256(args);
         this._log += `${col}${text} `;
         return this;
     }

@@ -1,6 +1,6 @@
-const cc = require('@avexcodes/consolecolour');
+const CC = require("@avexcodes/consolecolour");
 
-let con = new cc();
+let con = new CC();
 
 // Black, Red, Green, Yellow, Blue, Magenta, Cyan, White Bright Red
 con.yellow("Banana!");
