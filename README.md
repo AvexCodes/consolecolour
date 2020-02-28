@@ -1,4 +1,5 @@
 # Console Colour
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c88a430b26e5405999de3907f967bd2b)](https://www.codacy.com/manual/AvexCodes/consolecolour?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AvexCodes/consolecolour&amp;utm_campaign=Badge_Grade)
 Console Colour, allows you to add life to your console with 9 different colours, 6 different display formats, and 8 different background colours!
 
 # Installation
