@@ -118,7 +118,7 @@ class ConsoleColour {
             return this;
         }
         this._log += `${Reverse}${text || ""}${Reset} `;
-        return this
+        return this;
     }
 
     blink(text, space) {
@@ -299,7 +299,7 @@ class ConsoleColour {
                 this._log += `${FgYellow}${text || ""}${Reset}`;
                 return this;
             }
-            this._log += `${col}${text || ''} `;
+            this._log += `${col}${text || ""} `;
             return this;
         }
 

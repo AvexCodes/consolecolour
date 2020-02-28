@@ -2,7 +2,7 @@
 Console Colour, allows you to add life to your console with 9 different colours, 6 different display formats, and 8 different background colours!
 
 # Installation
-```
+```yaml
 npm install ConsoleColour
 ```
 # Features
@@ -13,7 +13,7 @@ npm install ConsoleColour
 - Blink, Reverse (Not support by a lot of terminals)
 - Underscore, Bold, Strikethrough, Italics
 
- ``` js
+ ```js
 const cc = require('consolecolour')
 
 let con = new cc()
@@ -38,7 +38,5 @@ con.rgbText([255,0,255], "PURPLE!").log
 
 // Chainable Methods!
 con.backYellow("Yellow background with").red("some red text!").reset().blink("Blinking...").log
-
-
 ```	
 
